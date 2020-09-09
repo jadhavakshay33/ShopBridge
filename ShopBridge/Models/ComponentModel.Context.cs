@@ -26,5 +26,7 @@ namespace ShopBridge.Models
         }
     
         public virtual DbSet<component> components { get; set; }
+
+        public System.Data.Entity.DbSet<ShopBridge.Models.ComponentViewModel> ComponentViewModels { get; set; }
     }
 }
