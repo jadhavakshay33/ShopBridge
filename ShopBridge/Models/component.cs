@@ -18,5 +18,6 @@ namespace ShopBridge.Models
         public string Name { get; set; }
         public double Price { get; set; }
         public byte[] Image { get; set; }
+        public string Discription { get; set; }
     }
 }

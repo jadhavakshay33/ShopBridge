@@ -52,7 +52,8 @@ namespace ShopBridge.Controllers
             db.components.Add(new component{ 
             Name=model.Name,
             Price=model.Price,
-            Image=bytes
+            Image=bytes,
+            Discription=model.Discription
             });
             db.SaveChanges();
             return RedirectToAction("CoponentHomePage");
