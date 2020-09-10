@@ -11,13 +11,19 @@ namespace ShopBridge.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class component
     {
+        [Required]
         public int ID { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public double Price { get; set; }
+        [Required]
         public byte[] Image { get; set; }
+        [Required]
         public string Discription { get; set; }
     }
 }

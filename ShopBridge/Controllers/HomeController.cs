@@ -41,6 +41,9 @@ namespace ShopBridge.Controllers
         public ActionResult AddComponent(component model,HttpPostedFileBase Image1)
         {
             var db = new ShopBridgeEntities();
+
+            if(ModelState.IsValid && Image1!=null)
+            {
             byte[] bytes;
             using(BinaryReader br=new BinaryReader(Image1.InputStream))
             {
@@ -57,6 +60,9 @@ namespace ShopBridge.Controllers
             });
             db.SaveChanges();
             return RedirectToAction("CoponentHomePage");
+
+            }
+            return View();
         }
 
 

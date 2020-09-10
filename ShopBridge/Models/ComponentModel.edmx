@@ -13,7 +13,7 @@
           <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Price" Type="float" Nullable="false" />
           <Property Name="Image" Type="varbinary(max)" Nullable="false" />
-          <Property Name="Discription" Type="nvarchar" MaxLength="100" />
+          <Property Name="Discription" Type="nvarchar(max)" />
         </EntityType>
         <EntityContainer Name="ShopBridgeModelStoreContainer">
           <EntitySet Name="component" EntityType="Self.component" Schema="dbo" store:Type="Tables" />
@@ -30,7 +30,7 @@
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Price" Type="Double" Nullable="false" />
           <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
-          <Property Name="Discription" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Discription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="ShopBridgeEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="components" EntityType="Self.component" />
