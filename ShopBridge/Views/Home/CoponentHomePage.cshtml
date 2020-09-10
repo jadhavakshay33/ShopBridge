@@ -17,6 +17,7 @@
         border: 0;
         width: 100px;
     }
+
     .panel {
         height: auto;
         width: auto;
@@ -30,6 +31,7 @@
             background-color: #dfccff;
             text-align: center;
         }
+
     #myImg {
         border-radius: 5px;
         cursor: pointer;
@@ -141,12 +143,12 @@
     <br />
     <hr />
     <h2>Coponent List</h2>
-    <hr/>
+    <hr />
     <h3>Double click on Image View Full Image</h3>
     <div class="row">
         @foreach (var item in Model)
         {
-            <div class="col-md-2">
+            <div class="col-md-push-2">
                 <div class="panel panel-purple">
                     <div>
                         <img alt="@item.Name" id="@item.ID" onclick="callpopUp(this.id)"
